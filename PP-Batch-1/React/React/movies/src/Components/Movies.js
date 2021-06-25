@@ -13,7 +13,7 @@ export default class Movies extends Component {
     }
     async componentDidMount(){
         console.log('Component DID Mount');
-        let res = await axios.get('https://backend-react-movie.herokuapp.com/movies');
+        let res = await axios.get('https://backend-react-movie.herokuapp.com/movies');// backend from herokuu
         console.log(res);
         this.setState({
             movies:res.data.movies
@@ -36,6 +36,7 @@ export default class Movies extends Component {
             movies: arr
         });
     }
+    //**********************************************Ratings sorting**************************************************************** */
     sortByRatings = (e) => {
         let className = e.target.className;
         console.log(className);
@@ -56,6 +57,7 @@ export default class Movies extends Component {
             movies: sortedMovies
         })
     }
+    /*********************************************Stocks Sorting******************************************* */
     sortByStock = (e) => {
         let className = e.target.className;
         console.log(className);
@@ -168,8 +170,3 @@ export default class Movies extends Component {
     }
 }
 
-{/* <li className="page-item"><a class="page-link" href="#">1</a></li>
-    <li className="page-item active" aria-current="page">
-      <a className="page-link" href="#">2</a>
-    </li>
-    <li className="page-item"><a class="page-link" href="#">3</a></li> */}
