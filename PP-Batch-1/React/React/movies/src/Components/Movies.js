@@ -1,4 +1,4 @@
-mport React, { Component } from 'react'
+import React, { Component } from 'react'
 import { getMovies } from './getMovies';
 import axios from 'axios';
 export default class Movies extends Component {
@@ -199,9 +199,3 @@ export default class Movies extends Component {
         )
     }
 }
-
-{/* <li className="page-item"><a class="page-link" href="#">1</a></li>
-    <li className="page-item active" aria-current="page">
-      <a className="page-link" href="#">2</a>
-    </li>
-    <li className="page-item"><a class="page-link" href="#">3</a></li> */}
