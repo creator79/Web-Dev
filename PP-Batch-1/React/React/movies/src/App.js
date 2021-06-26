@@ -1,13 +1,4 @@
 import Movies from './Components/Movies';
-function App() {
-  return (
-  //  <h1>Hello</h1>
-  <Movies/>
-  );
-}
-
-export default App;
-import Movies from './Components/Movies';
 import About from './Components/About';
 import Home from './Components/Home';
 import Nav from './Nav';
