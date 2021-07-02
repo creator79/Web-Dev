@@ -4,7 +4,7 @@ function Us() {
     const [msgObj,setMessage] = useState({message:'',id:1});
     const handleChange =(e)=>{
         let val = e.target.value;
-        // msgObj.message = val;
+        //  msgObj.message = val;
         // console.log(msgObj);
         // setMessage({...msgObj,message:val});
         let obj  = {...msgObj,message:val};
